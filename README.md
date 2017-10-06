@@ -1,2 +1,2 @@
-# typografica
-typographic intros
+# TYPOLAB
+Experimentierfeld für interaktive Typografie
