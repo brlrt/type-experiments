@@ -1,8 +1,8 @@
 
 <?php include 'header.php'; ?>
 
-<div class="fullpage flex-center">
-	<h1 id="h1" class="h1 white">Hey!</h1>
+<div class="flex-center" id="stage">
+	<h1 id="h1" class="h1">Hey!</h1>
 </div>
 
 

@@ -1,8 +1,8 @@
 <?php include 'header.php'; ?>
 
-<div class="fullpage flex-center">
+<div class="flex-center" id="stage">
 
-	<h1 class="h1 white" style="white-space: nowrap;" id="rotate">Adorable Errors</h1>
+	<h1 class="h1" style="white-space: nowrap;" id="rotate">Adorable Errors</h1>
 
 </div>
 

@@ -5,7 +5,6 @@
 	.fullpage {
 		width: 100%;
 		height: 100vh;
-		background-color: black;
 	}
 
 	.a {
@@ -22,9 +21,9 @@
 
 </style>
 
-<div class="stage bg">
+<div class="stage">
 
-	<div class="parent fullpage">
+	<div class="parent">
 
 		<div class="child fullpage eins">
 			<h2 class="h1">
@@ -33,7 +32,7 @@
 		</div>
 
 		<div class="a child">
-			<div class="fullpage wrap zwei">
+			<div class="wrap zwei">
 				<h2 class="h2">
 		When the intelligent and animal souls are held together in one embrace, <br>
 		they can be kept from separating. When one gives undivided attention to <br>

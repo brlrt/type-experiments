@@ -24,7 +24,9 @@
 
 </style>
 
-<div class="stage bg flex-center">
+
+
+<div class="flex-center" id="stage">
 
 	<div class="marquee">
 	 	<div class="marquee-text h1">

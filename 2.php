@@ -1,9 +1,9 @@
 <?php include 'header.php'; ?>
 
-<div class="stage flex">
+<div class="flex">
 
-<div class="fifty h2 flex-center fg">Kyoto</div>
-<div class="fifty h2 flex-center clock2 bg">Tokyo</div>
+    <div class="fifty h2 flex-center fg">Kyoto</div>
+    <div class="fifty h2 flex-center clock2 bg">Tokyo</div>
 
 </div>
 
