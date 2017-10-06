@@ -76,26 +76,3 @@ $( '#stage' ).click(function() {
 
 
   });
-  
-	var headline;
-
-// Load stuff from the New York Times API
-	$(document).ready(function(){
-	var errorMsg = 'Error. the new york times api is currently not available. Please try again later';
-
-	// Built by LucyBot. www.lucybot.com
-	var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
-	url += '?' + $.param({
-	  'api-key': "f93f51e506ce414e8c5ef8b9afa5fb6d",
-	  'q': 'design'
-	});
-	$.ajax({
-	  url: url,
-	  method: 'GET',
-	}).done(function(result) {
-
-	headline = result.response.docs[Math.floor(Math.random() * 10)].headline.main;
-
-	}).fail(function(err) {
-	});
-});

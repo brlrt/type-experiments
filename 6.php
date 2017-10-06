@@ -1,7 +1,9 @@
+<?php include 'header.php'; ?>
+
 <div class="fullpage flex-center">
-	
+
 	<h1 class="h1 white" style="white-space: nowrap;" id="rotate">Adorable Errors</h1>
-	
+
 </div>
 
 <script>
@@ -10,5 +12,8 @@
 		$('#rotate').css('transform','rotate(' + event.pageX + 'deg)');
 		$('#rotate').css('font-size', 40 + event.pageX +'px');
 	});
-	
+
 </script>
+
+
+<?php include 'footer.php'; ?>

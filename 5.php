@@ -1,4 +1,6 @@
 
+<?php include 'header.php'; ?>
+
 <div class="fullpage flex-center">
 	<h1 id="h1" class="h1 white">Hey!</h1>
 </div>
@@ -14,7 +16,7 @@
 
 // Array
 
-	
+
 	var str = "Creative coding is a rising discipline, inspiring and connecting thousands of people worldwide. Open Source software tools lay the foundation for a new generation of artists and designers, using the internet to exchange, learn, teach, share, exhibit and connect, regardless of ethnicity, nation­ality, age, religion or gender. Creative coding reveals completely new opportunities in many ways. And this is just the beginning of the story.";
 
 var string2 = str.replace(/&shy;/g,'');
@@ -25,7 +27,7 @@ var arr = string3.split(' ');
 
 // TEXT
 // A $( document ).ready() block.
-		
+
 
 		$(document).mousemove(function(event){
 			currentWord = arr[0];
@@ -33,5 +35,7 @@ var arr = string3.split(' ');
 			currentWord = arr[mappedRange];
 			$('#h1').text(currentWord);
 });
-	
+
 </script>
+
+<?php include 'footer.php'; ?>
