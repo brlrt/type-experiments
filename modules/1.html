@@ -1,0 +1,16 @@
+<div class="stage flex-center bg">
+
+	<span class="h2 clock">
+	
+	</span>
+	
+</div>
+
+  <script>
+    $(function () {
+      function updateClock() {
+        $('.clock').html(moment().format('MMMM DD YYYY'));      }
+      setInterval(updateClock, 1000);
+      updateClock();
+    });
+  </script>

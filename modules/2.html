@@ -1,0 +1,17 @@
+<div class="stage flex">
+
+<div class="fifty h2 flex-center clock2 bg"></div>
+<div class="fifty h2 flex-center fg">Berlin</div>
+
+</div>
+
+  <script>
+    $(function () {
+      function updateClock() {
+        $('.clock2').html(moment().format('HH:mm:ss'));
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+    });
+  </script>
+
