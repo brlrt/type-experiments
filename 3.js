@@ -15,5 +15,5 @@ marquee.each(function() {
             indent = mar.width();
         }
     };
-    mar.data('interval',setInterval(mar.marquee,100/60));
+    mar.data('interval',setInterval(mar.marquee,100/10));
 });

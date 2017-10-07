@@ -1,4 +1,7 @@
 <nav id="navigation">
+	<div id="navbox">
+
+
 	<?php
 
 	$numberOfSketches = 8;
@@ -20,6 +23,7 @@
 
 	}
 	?>
+	</div>
 
 </nav>
 

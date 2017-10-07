@@ -4,7 +4,7 @@
 		<link href="style.css" rel="stylesheet">
 		<script src="assets/jquery-2.2.4.min.js"></script>
 	</head>
-<body>
+<body class="white">
 
 <?php
 

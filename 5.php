@@ -14,12 +14,9 @@ h1 {
 
 .word-container {
 	overflow: hidden !important;
-	background: white;
 }
 
-#controlWidth {
-	border-right: 10px solid red;
-}
+
 
 </style>
 
