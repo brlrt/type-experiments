@@ -5,18 +5,9 @@
 h1 {
 	font-size: calc(16px + 20vw);
 }
-
-.wordWrapper {
-	width: 100vw;
-	height: 90vh;
-
-}
-
 .word-container {
 	overflow: hidden !important;
 }
-
-
 
 </style>
 

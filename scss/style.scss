@@ -1,5 +1,7 @@
 $fg: #111111;
-$bg: #f9f0f1;
+$bg: #bbbbbb;
+$font: Helvetica,arial,sans-serif;
+$borders: 0px;
 
 * {
 	font-weight: normal;
@@ -7,7 +9,7 @@ $bg: #f9f0f1;
 
 body {
 	margin: 0;
-	font-family: Helvetica,arial,sans-serif;
+	font-family: $font;
 	height: 100vh;
 	-webkit-transition: all 1s ease; /* Firefox */
 	-moz-transition: all 1s ease; /* WebKit */
@@ -26,13 +28,12 @@ body.white {
 	}
 	#navigation {
 		background: $bg;
-		border-top: 3px solid $fg;
 		a {
 			color: $fg;
 		}
 	}
 	#controlWidth {
-		border-right: 3px solid $fg;
+		border-right: $borders solid $fg;
 	}
 	.word-container {
 		background: $bg;
@@ -41,59 +42,31 @@ body.white {
 
 
 
-	body.black {
-		color: $bg;
-		background: $fg;
-
-		p, h1,h2,h3,h4,h5 {
-			color: $bg;
-
-
-	}
-	#navigation {
-		background: $fg;
-		border-top: 3px solid $bg;
-		a {
-			color: $bg;
-		}
-	}
-	#controlWidth {
-		border-right: 3px solid $bg;
-	}
-	.word-container {
-		background: $fg;
-	}
-}
 
 #navigation {
 	position: fixed;
 	bottom: 0;
 	left:0;
 	z-index: 100000;
-	font-size: 30px;
 	width: 100%;
-	height: 10vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    height: 40px;
 
 	#navbox {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		width: 100%;
-		padding: 0 3vw;
 	}
 
 	a {
 		display: block;
 		text-align: center;;
-		//width: 100%;
+		width: 100%;
 		text-decoration: none;
-		font-size: calc(10px + 2vw);
-
-
-
+		font-size: calc(10px + 1vw);
 	}
 	a.active {
 		-ms-transform: rotate(90deg); /* IE 9 */
@@ -107,7 +80,7 @@ body.white {
 
 #stage {
 	width: 100%;
-	height: 90vh;
+	height: 100vh;
 	overflow: hidden;
 }
 
@@ -126,7 +99,7 @@ justify-content: center;
 
 .stage {
 	width: 100%;
-	height:90vh;
+	height:100vh;
 }
 
 .h1,.h2,.h3,.h4,.h5,.h6 {
@@ -145,7 +118,7 @@ justify-content: center;
 
 .fifty {
 	width: 50%;
-	height: 90vh;
+	height: 100vh;
 }
 
 .flex {
@@ -161,7 +134,7 @@ justify-content: center;
 
 .fullpage {
 	width: 100%;
-	height: 90vh;
+	height: 100vh;
 }
 
 
@@ -174,7 +147,29 @@ justify-content: center;
 	position: absolute;
 }
 
+
 .topleft {
-	top: 0;
-	left: 0;
+    top: 0;
+    left: 0;
+}
+
+.topright {
+    top: 0;
+    right: 0;
+}
+
+.bottomleft{
+    bottom: 0;
+    left: 0;
+}
+
+.bottomright {
+    bottom: 0;
+    right: 0;
+}
+
+
+.wordWrapper {
+    width: 100vw;
+    height: 100vh;
 }

@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  font-family: Helvetica,arial,sans-serif;
+  font-family: Helvetica, arial, sans-serif;
   height: 100vh;
   -webkit-transition: all 1s ease;
   /* Firefox */
@@ -16,56 +16,39 @@ body {
 
 body.white {
   color: #111111;
-  background: #f9f0f1; }
+  background: #bbbbbb; }
   body.white p, body.white h1, body.white h2, body.white h3, body.white h4, body.white h5 {
     color: #111111; }
   body.white #navigation {
-    background: #f9f0f1;
-    border-top: 3px solid #111111; }
+    background: #bbbbbb; }
     body.white #navigation a {
       color: #111111; }
   body.white #controlWidth {
-    border-right: 3px solid #111111; }
+    border-right: 0px solid #111111; }
   body.white .word-container {
-    background: #f9f0f1; }
-
-body.black {
-  color: #f9f0f1;
-  background: #111111; }
-  body.black p, body.black h1, body.black h2, body.black h3, body.black h4, body.black h5 {
-    color: #f9f0f1; }
-  body.black #navigation {
-    background: #111111;
-    border-top: 3px solid #f9f0f1; }
-    body.black #navigation a {
-      color: #f9f0f1; }
-  body.black #controlWidth {
-    border-right: 3px solid #f9f0f1; }
-  body.black .word-container {
-    background: #111111; }
+    background: #bbbbbb; }
 
 #navigation {
   position: fixed;
   bottom: 0;
   left: 0;
   z-index: 100000;
-  font-size: 30px;
   width: 100%;
-  height: 10vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  height: 40px; }
   #navigation #navbox {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 0 3vw; }
+    width: 100%; }
   #navigation a {
     display: block;
     text-align: center;
+    width: 100%;
     text-decoration: none;
-    font-size: calc(10px + 2vw); }
+    font-size: calc(10px + 1vw); }
   #navigation a.active {
     -ms-transform: rotate(90deg);
     /* IE 9 */
@@ -75,7 +58,7 @@ body.black {
 
 #stage {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden; }
 
 .flex-center-x {
@@ -88,7 +71,7 @@ body.black {
 
 .stage {
   width: 100%;
-  height: 90vh; }
+  height: 100vh; }
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin: 0;
@@ -102,7 +85,7 @@ body.black {
 
 .fifty {
   width: 50%;
-  height: 90vh; }
+  height: 100vh; }
 
 .flex {
   display: flex; }
@@ -114,7 +97,7 @@ body.black {
 
 .fullpage {
   width: 100%;
-  height: 90vh; }
+  height: 100vh; }
 
 .parent {
   position: relative; }
@@ -125,3 +108,19 @@ body.black {
 .topleft {
   top: 0;
   left: 0; }
+
+.topright {
+  top: 0;
+  right: 0; }
+
+.bottomleft {
+  bottom: 0;
+  left: 0; }
+
+.bottomright {
+  bottom: 0;
+  right: 0; }
+
+.wordWrapper {
+  width: 100vw;
+  height: 100vh; }

@@ -3,6 +3,7 @@
 	<head>
 		<link href="style.css" rel="stylesheet">
 		<script src="assets/jquery-2.2.4.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet">
 	</head>
 <body class="white">
 
