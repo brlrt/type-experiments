@@ -1,3 +1,7 @@
+* {
+	font-weight: normal;
+}
+
 body {
 	margin: 0;
 	font-family: Helvetica,arial,sans-serif;
@@ -51,6 +55,7 @@ justify-content: center;
 
 .h1,.h2,.h3,.h4,.h5,.h6 {
 	margin: 0;
+	font-weight: normal;
 }
 
 .white {

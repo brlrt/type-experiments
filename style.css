@@ -1,6 +1,10 @@
+* {
+  font-weight: normal;
+  }
+
 body {
   margin: 0;
-  font-family: Helvetica,arial,sans-serif;
+  font-family: 'Josefin Sans', Helvetica, arial, sans-serif;
   height: 100vh;
   overflow: hidden; }
 
@@ -36,7 +40,8 @@ body {
   height: 90vh; }
 
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin: 0; }
+  margin: 0;
+  font-weight: normal; }
 
 .white {
   color: white; }
