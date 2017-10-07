@@ -1,20 +1,9 @@
-var navName = 'breuer';
-
 // Load Gulp
 var gulp = require('gulp');
 
 // Load Plugins
-var rename = require( 'gulp-rename' );
-var uglify = require( 'gulp-uglify' );
-var concat = require('gulp-concat');
 var sass = require('gulp-sass');
-
-
-var paths = {
-  themeScripts: [
-      'main.js'
-  ]
-};
+var concat = require('gulp-concat');
 
 /*
     SASS
@@ -28,15 +17,11 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(''));
 });
 
-/*
-    JS
-*/
+
 
 gulp.task('packScripts', function() {
-  return gulp.src(paths.themeScripts)
-    .pipe(concat('js/main.js'))
-    .pipe( uglify() )
-    // .pipe( rename( { suffix: '.min' } ) )
+  return gulp.src('components/*.js')
+    .pipe(concat('main.js'))
     .pipe(gulp.dest(''));
 });
 
@@ -47,7 +32,7 @@ gulp.task('packScripts', function() {
 
 gulp.task('watch', function() {
   gulp.watch('**/*.scss', ['sass']);
-  gulp.watch(paths.themeScripts, ['packScripts']);
+  gulp.watch('components/*.js', ['packScripts']);
 });
 
 
