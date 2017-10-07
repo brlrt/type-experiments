@@ -1,5 +1,5 @@
 
-var headline = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum";
+var headline = "Die geltende japanische Verfassung wurde am 3. November 1946 verkündet und trat am 3. Mai 1947 in Kraft.";
 
 $('.marquee-text').html(headline);
 $('.marquee').fadeIn('slow');
