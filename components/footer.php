@@ -4,7 +4,7 @@
 
 	<?php
 
-	$numberOfSketches = 8;
+	$numberOfSketches = 12;
 
 	for ($x = 1; $x <= $numberOfSketches; $x++) {
 

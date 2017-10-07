@@ -9,6 +9,10 @@ h1 {
 	overflow: hidden !important;
 }
 
+#controlWidth {
+	width: 50%;
+}
+
 </style>
 
 <div id="stage" class="parent fullpage">

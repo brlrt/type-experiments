@@ -6,6 +6,7 @@
 	    overflow:hidden;
 	    margin: 0;
 		padding: 0;
+		text-indent: 2000px;
 	}
 	div.marquee > div.marquee-text {
 	    white-space:nowrap;
@@ -18,6 +19,11 @@
 		margin: 0;
 		padding: 0;
 	}
+
+	.h1 {
+		font-size: calc(40px + 30vw);
+	}
+
 </style>
 
 <div class="flex-center" id="stage">

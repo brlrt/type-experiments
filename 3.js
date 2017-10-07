@@ -1,5 +1,5 @@
 
-var headline = "Die geltende japanische Verfassung wurde am 3. November 1946 verkündet und trat am 3. Mai 1947 in Kraft.";
+var headline = 'Os caracteres que compõem seu nome significam "Origem do Sol", razão pela qual o Japão é às vezes identificado como a "Terra do Sol Nascente".';
 
 $('.marquee-text').html(headline);
 $('.marquee').fadeIn('slow');
