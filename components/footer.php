@@ -16,7 +16,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 </button>
 
 <nav id="navigation">
-	<div id="navbox">
+	<div id="navbox" class="panamera">
 	<?php
 	$numberOfSketches = 12;
 	for ($x = 1; $x <= $numberOfSketches; $x++) {

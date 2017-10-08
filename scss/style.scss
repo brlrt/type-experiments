@@ -53,7 +53,7 @@ $sans: 'Lab Mono Web', Helvetica, arial, sans-serif;
 $serif: 'Cormorant', Helvetica, arial, sans-serif;
 $mineral: 'mineral', Helvetica, arial, sans-serif;
 $maxeville: 'maxeville', Helvetica, arial, sans-serif;
-$panarema: 'panarema', Helvetica, arial, sans-serif;
+$panamera: 'panarema', Helvetica, arial, sans-serif;
 $borders: 0px;
 
 * {
@@ -81,8 +81,8 @@ body {
     font-family: $maxeville;
 }
 
-.panarema {
-    font-family: $panarema;
+.panamera {
+    font-family: $panamera;
 }
 
 
@@ -144,7 +144,7 @@ body.white {
 
 #navigation {
 	position: fixed;
-	top: 0;
+	bottom: 0;
 	left:0;
 	z-index: 5;
 	width: 100%;
@@ -155,17 +155,17 @@ body.white {
 
 	#navbox {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 		width: 100%;
 	}
 
 	a {
 		display: block;
-		text-align: center;;
-		width: 100%;
+		text-align: center;
+        min-width: 40px;
 		text-decoration: none;
-		font-size: calc(10px + 1vw);
+		font-size: calc(16px);
 	}
 	a.active {
 		-webkit-animation: rotating 2s linear infinite;
