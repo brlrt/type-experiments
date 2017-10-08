@@ -54,7 +54,7 @@
 </style>
 
 <div class="flex-center parent" id="stage">
-    <div id="kobe" class="parent">
+    <div id="kobe" class="parent maxeville">
         <div class="letter">K</div>
         <div class="zwischenraum"></div>
         <div class="letter">o</div>

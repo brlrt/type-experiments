@@ -1,28 +1,91 @@
 @font-face {
     font-family: 'Lab Mono Web';
-    src: url( 'assets/labmono-regular-web.eot' );
-    src: url( 'assets/labmono-regular-web.eot?#iefix' ) format( 'embedded-opentype' ),
-         url( 'assets/labmono-regular-web.woff2' ) format( 'woff2' ),
-         url( 'assets/labmono-regular-web.woff' ) format( 'woff' ),
-         url( 'assets/labmono-regular-web.ttf' ) format( 'truetype' );
+    src: url( 'assets/fonts/labmono-regular-web.eot' );
+    src: url( 'assets/fonts/labmono-regular-web.eot?#iefix' ) format( 'embedded-opentype' ),
+         url( 'assets/fonts/labmono-regular-web.woff2' ) format( 'woff2' ),
+         url( 'assets/fonts/labmono-regular-web.woff' ) format( 'woff' ),
+         url( 'assets/fonts/labmono-regular-web.ttf' ) format( 'truetype' );
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant';
+    src: url( 'assets/fonts/Cormorant-Regular.eot' );
+    src: url( 'assets/fonts/Cormorant-Regular.woff2' ) format( 'woff2' ),
+         url( 'assets/fonts/Cormorant-Regular.woff' ) format( 'woff' );
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'mineral';
+    src: url( 'assets/fonts/mineral.eot' );
+    src: url( 'assets/fonts/mineral.woff2' ) format( 'woff2' ),
+         url( 'assets/fonts/mineral.woff' ) format( 'woff' );
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'maxeville';
+    src: url( 'assets/fonts/SMMaxeville-Constructed.eot' );
+    src: url( 'assets/fonts/SMMaxeville-Constructed.woff2' ) format( 'woff2' ),
+         url( 'assets/fonts/SMMaxeville-Constructed.woff' ) format( 'woff' );
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'panarema';
+    src: url( 'assets/fonts/Panamera-Bold.eot' );
+    src: url( 'assets/fonts/Panamera-Bold.woff2' ) format( 'woff2' ),
+         url( 'assets/fonts/Panamera-Bold.woff' ) format( 'woff' );
     font-weight: normal;
     font-style: normal;
 }
 
 $fg: #111111;
 $bg: #bbbbbb;
-$font: 'Lab Mono Web', Helvetica, arial, sans-serif;
-$borders: 3px;
+$sans: 'Lab Mono Web', Helvetica, arial, sans-serif;
+$serif: 'Cormorant', Helvetica, arial, sans-serif;
+$mineral: 'mineral', Helvetica, arial, sans-serif;
+$maxeville: 'maxeville', Helvetica, arial, sans-serif;
+$panarema: 'panarema', Helvetica, arial, sans-serif;
+$borders: 0px;
 
 * {
 	font-weight: normal;
 }
 
+
+
 body {
 	margin: 0;
-	font-family: $font;
+	font-family: $sans;
 	height: 100vh;
 }
+
+.serif {
+    font-family: $serif;
+}
+
+.mineral {
+    font-family: $mineral;
+}
+
+
+.maxeville {
+    font-family: $maxeville;
+}
+
+.panarema {
+    font-family: $panarema;
+}
+
+
 
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {
@@ -70,7 +133,7 @@ body.white {
 			color: $fg;
 		}
 	}
-	
+
 	.word-container {
 		background: $bg;
 	}
@@ -81,7 +144,7 @@ body.white {
 
 #navigation {
 	position: fixed;
-	bottom: 0;
+	top: 0;
 	left:0;
 	z-index: 5;
 	width: 100%;
@@ -307,4 +370,8 @@ button.active {
     -moz-transition: all 1s ease; /* WebKit */
     -o-transition: all 1s ease; /* Opera */
     transition: all 1s ease; /* Standard */
+}
+
+.uppercase {
+    text-transform: uppercase;
 }

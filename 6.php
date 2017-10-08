@@ -2,9 +2,8 @@
 
 <div class="flex-center" id="stage">
 
-	<h1 class="h1" style="white-space: nowrap;" id="rotate">Yokohama</h1>
+	<h1 class="h1 panarema" style="white-space: nowrap;" id="rotate">Yokohama</h1>
 
 </div>
-
 
 <?php include 'components/footer.php'; ?>
