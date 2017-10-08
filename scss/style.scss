@@ -12,7 +12,7 @@
 $fg: #111111;
 $bg: #bbbbbb;
 $font: 'Lab Mono Web', Helvetica, arial, sans-serif;
-$borders: 0px;
+$borders: 3px;
 
 * {
 	font-weight: normal;
@@ -64,14 +64,13 @@ body.white {
 
 	}
 	#navigation {
+        border-top: $borders solid $fg;
 		background: $bg;
 		a {
 			color: $fg;
 		}
 	}
-	#controlWidth {
-		border-right: $borders solid $fg;
-	}
+	
 	.word-container {
 		background: $bg;
 	}
@@ -226,6 +225,10 @@ justify-content: center;
 	font-size: 30px;
 }
 
+#nav-toggle:hover {
+
+}
+
 button:focus {
 	outline:0;
 }
@@ -242,8 +245,24 @@ button.active {
 	color: $bg;
 }
 
+.p10 {
+    padding: 10px;
+}
+
 .p15 {
 	padding: 15px;
+}
+
+.p20 {
+    padding: 20px;
+}
+
+.p25 {
+    padding: 25px;
+}
+
+.p30 {
+    padding: 30px;
 }
 
 #overlay {
@@ -257,7 +276,7 @@ button.active {
 	.inner {
 		position: absolute;
 		overflow: hidden;
-		font-size: 30px;
+		font-size: calc(10px + 1vw);
 		background: $fg;
 		color: $bg;
 		width: 100vw;
@@ -273,4 +292,19 @@ button.active {
 
 #overlay.active {
 	width: 100%;
+}
+
+.w45 {
+    width: 33%;
+}
+
+.h100 {
+    height: 100vh;
+}
+
+.t1s {
+    -webkit-transition: all 1s ease; /* Firefox */
+    -moz-transition: all 1s ease; /* WebKit */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease; /* Standard */
 }

@@ -17,5 +17,3 @@
 		?>
 	</head>
 <body class="white">
-
-<section id="app" class="flex">

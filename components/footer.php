@@ -1,18 +1,18 @@
 <nav id="overlay" class="topleft flex fixed fullpage">
-	<div class="inner">
-		<div class="fifty p15">
+	<div class="inner h100">
+		<div class="w45 h100 p15">
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lore
 		</div>
-		<div class="fifty p15">
+		<div class="w45 h100 p15">
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lore
 		</div>
 	</div>
 </nav>
 
-</section>
 
-<button id="nav-toggle" class="fixed topright">
-	MENU
+
+<button id="nav-toggle" class="fixed t1s topright">
+	?
 </button>
 
 <nav id="navigation">
