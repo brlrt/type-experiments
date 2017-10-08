@@ -1,20 +1,5 @@
 <?php include 'components/header.php'; ?>
 
-<style>
-
-h1 {
-	font-size: calc(16px + 20vw);
-}
-.word-container {
-	overflow: hidden !important;
-}
-
-#controlWidth {
-	width: 50%;
-}
-
-</style>
-
 <div id="stage" class="parent fullpage">
 	<div class="word-container fullpage child topleft">
 		<div class="wordWrapper flex-center">

@@ -7,7 +7,7 @@
 // Array
 
 
-var str = "O país é um arquipélago de 6 852 ilhas, cujas quatro maiores são Honshu, Hokkaido, Kyushu e Shikoku, representando em conjunto 97% da área terrestre nacional.";
+var str = "O país é um arquipélago de 6852 ilhas, cujas quatro maiores são Honshu, Hokkaido, Kyushu e Shikoku, representando em conjunto 97% da área terrestre nacional.";
 
 var string2 = str.replace(/&shy;/g,'');
 

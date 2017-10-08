@@ -1,6 +1,5 @@
 <?php include 'components/header.php'; ?>
 
-
 <div class="flex">
 
     <div class="fifty h2 flex-center" id="kyoto">Kyoto</div>

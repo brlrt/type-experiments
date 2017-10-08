@@ -1,6 +1,17 @@
+@font-face {
+    font-family: 'Lab Mono Web';
+    src: url( 'assets/labmono-regular-web.eot' );
+    src: url( 'assets/labmono-regular-web.eot?#iefix' ) format( 'embedded-opentype' ),
+         url( 'assets/labmono-regular-web.woff2' ) format( 'woff2' ),
+         url( 'assets/labmono-regular-web.woff' ) format( 'woff' ),
+         url( 'assets/labmono-regular-web.ttf' ) format( 'truetype' );
+    font-weight: normal;
+    font-style: normal;
+}
+
 $fg: #111111;
 $bg: #bbbbbb;
-$font: Helvetica,arial,sans-serif;
+$font: 'Lab Mono Web', Helvetica, arial, sans-serif;
 $borders: 0px;
 
 * {
@@ -11,10 +22,6 @@ body {
 	margin: 0;
 	font-family: $font;
 	height: 100vh;
-	-webkit-transition: all 1s ease; /* Firefox */
-	-moz-transition: all 1s ease; /* WebKit */
-	-o-transition: all 1s ease; /* Opera */
-	transition: all 1s ease; /* Standard */
 }
 
 
@@ -77,7 +84,7 @@ body.white {
 	position: fixed;
 	bottom: 0;
 	left:0;
-	z-index: 100000;
+	z-index: 5;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -204,8 +211,66 @@ justify-content: center;
     right: 0;
 }
 
+.fixed {
+	position: fixed;
+}
 
 .wordWrapper {
     width: 100vw;
     height: 100vh;
+}
+
+#nav-toggle {
+	padding: 15px;
+	z-index: 100;
+	font-size: 30px;
+}
+
+button:focus {
+	outline:0;
+}
+
+button {
+	padding: 0;
+	border: 0;
+	background: 0;
+	cursor: pointer;
+	color: $fg;
+}
+
+button.active {
+	color: $bg;
+}
+
+.p15 {
+	padding: 15px;
+}
+
+#overlay {
+	-webkit-transition: width 1s ease; /* Firefox */
+	-moz-transition: width 1s ease; /* WebKit */
+	-o-transition: width 1s ease; /* Opera */
+	transition: width 1s ease; /* Standard */
+	width: 0;
+	overflow: hidden;
+	z-index: 95;
+	.inner {
+		position: absolute;
+		overflow: hidden;
+		font-size: 30px;
+		background: $fg;
+		color: $bg;
+		width: 100vw;
+		display: flex;
+	}
+	a {
+		color: $bg;
+	}
+	a:hover {
+		color: $bg;
+	}
+}
+
+#overlay.active {
+	width: 100%;
 }
