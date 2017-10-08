@@ -39,7 +39,7 @@
 
 
 @font-face {
-    font-family: 'panarema';
+    font-family: 'panamera';
     src: url( 'assets/fonts/Panamera-Bold.eot' );
     src: url( 'assets/fonts/Panamera-Bold.woff2' ) format( 'woff2' ),
          url( 'assets/fonts/Panamera-Bold.woff' ) format( 'woff' );
@@ -53,7 +53,7 @@ $sans: 'Lab Mono Web', Helvetica, arial, sans-serif;
 $serif: 'Cormorant', Helvetica, arial, sans-serif;
 $mineral: 'mineral', Helvetica, arial, sans-serif;
 $maxeville: 'maxeville', Helvetica, arial, sans-serif;
-$panamera: 'panarema', Helvetica, arial, sans-serif;
+$panamera: 'panamera', Helvetica, arial, sans-serif;
 $borders: 0px;
 
 * {
@@ -117,14 +117,17 @@ body {
   }
 }
 
-body.white {
-		color: $fg;
-		background: $bg;
+body {
+    color: $fg;
+	background: $bg;
 
-		p, h1,h2,h3,h4,h5 {
-			color: $fg;
+    -webkit-transition: all 1s ease; /* Firefox */
+    -moz-transition: all 1s ease; /* WebKit */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease; /* Standard */
 
-
+	p, h1,h2,h3,h4,h5 {
+	      color: $fg;
 	}
 	#navigation {
         border-top: $borders solid $fg;
@@ -136,22 +139,64 @@ body.white {
 
 	.word-container {
 		background: $bg;
+        -webkit-transition: background 1s ease; /* Firefox */
+        -moz-transition: background 1s ease; /* WebKit */
+        -o-transition: background 1s ease; /* Opera */
+        transition: background 1s ease; /* Standard */
 	}
+    #toggleColor {
+        background: $fg;
+    }
+    #nav-toggle {
+        color: $fg;
+    }
 }
 
+// INVERT
+
+body.invert {
+    color: $bg;
+    background: $fg;
+
+    p, h1,h2,h3,h4,h5 {
+        color: $bg;
+    }
+    #navigation {
+        border-top: $borders solid $bg;
+        background: $fg;
+        a {
+            color: $bg;
+        }
+    }
+
+    .word-container {
+        background: $fg;
+    }
+    #toggleColor {
+        background: $bg;
+    }
+    #nav-toggle {
+        color: $bg;
+    }
+}
 
 
 
 #navigation {
 	position: fixed;
-	bottom: 0;
+	bottom:0;
 	left:0;
+    padding: 5px 0;
 	z-index: 5;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
     height: 40px;
+    -webkit-transition: all 1s ease; /* Firefox */
+    -moz-transition: all 1s ease; /* WebKit */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease; /* Standard */
 
 	#navbox {
 		display: flex;
@@ -163,9 +208,9 @@ body.white {
 	a {
 		display: block;
 		text-align: center;
-        min-width: 40px;
+        min-width: 50px;
 		text-decoration: none;
-		font-size: calc(16px);
+		font-size: calc(20px);
 	}
 	a.active {
 		-webkit-animation: rotating 2s linear infinite;
@@ -283,9 +328,21 @@ justify-content: center;
 }
 
 #nav-toggle {
+    top: 0;
+    right: 0;
 	padding: 15px;
 	z-index: 100;
 	font-size: 30px;
+}
+
+#toggleColor {
+    top: 50px;
+    right: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 20px;
+    margin: 15px;
+    z-index: 100;
 }
 
 #nav-toggle:hover {
@@ -340,16 +397,16 @@ button.active {
 		position: absolute;
 		overflow: hidden;
 		font-size: calc(10px + 1vw);
-		background: $fg;
-		color: $bg;
+		background: #888888;
+		color: $fg;
 		width: 100vw;
 		display: flex;
 	}
 	a {
-		color: $bg;
+		color: $fg;
 	}
 	a:hover {
-		color: $bg;
+		color: $fg;
 	}
 }
 
@@ -374,4 +431,16 @@ button.active {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+.m0 {
+    margin: 0;
+}
+
+.colorDark {
+    color: $fg !important;
+}
+
+.colorLight {
+    color: $bg !important;
 }

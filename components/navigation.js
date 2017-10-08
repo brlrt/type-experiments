@@ -48,3 +48,8 @@ $('#nav-toggle').click(function(){
     $('#overlay').toggleClass('active');
     $(this).toggleClass('active');
 });
+
+
+$('#toggleColor').click(function(){
+    $('body').toggleClass('invert');
+});

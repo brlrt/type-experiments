@@ -1,24 +1,32 @@
 <nav id="overlay" class="topleft flex fixed fullpage">
 	<div class="inner h100">
-		<div class="w45 h100 p15">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lore
+		<div class="w45 h100 p25">
+			This is a selection of typographic experiments by Tim Rodenbröker.
 		</div>
-		<div class="w45 h100 p15">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lore
+		<div class="w45 h100 p25">
+			Fonts:<br />
+			<a target="_blank" href="http://www.bb-bureau.fr/post/54693199038/mineral">Mineral</a><br />
+			<a target="_blank" href="https://github.com/uplaod/Panamera">Panamera</a><br />
+			<a target="_blank" href="http://martinwecke.de/lab-mono/">Lab Mono</a><br />
+			<a target="_blank" href="https://github.com/CatharsisFonts/Cormorant">Cormorant</a><br />
+			<a target="_blank" href="https://www.behance.net/gallery/50739967/SM-Maxville-Typeface">SM Maxeville Constructed</a>
+
 		</div>
 	</div>
 </nav>
 
 
 
-<button id="nav-toggle" class="fixed t1s topright">
+<button id="nav-toggle" class="fixed t1s">
 	?
 </button>
 
+<button id="toggleColor" class="fixed"></button>
+
 <nav id="navigation">
-	<div id="navbox" class="panamera">
+	<div id="navbox" class="">
 	<?php
-	$numberOfSketches = 12;
+	$numberOfSketches = 8;
 	for ($x = 1; $x <= $numberOfSketches; $x++) {
 	    echo '<a id="link';
 		echo $x;
