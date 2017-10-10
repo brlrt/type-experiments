@@ -1,22 +1,11 @@
-
-
-    @keyframes move1 {
-        0% {font-size: calc(20px + 10vw);}
-        100% {font-size: calc(20px + 10vw);}
-    }
-
-
-
-
 div.marquee {
     width:100%;
     overflow:hidden;
     margin: 0;
     padding: 0;
     text-indent: 2000px;
-
-
 }
+
 div.marquee > div.marquee-text {
     white-space:nowrap;
     display:inline;
@@ -25,12 +14,7 @@ div.marquee > div.marquee-text {
 
 .marquee-text {
     display: none;
+    font-size: calc(20px + 10vw);
     margin: 0;
     padding: 0;
-}
-
-.h1 {
-    animation-name: move1;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
 }

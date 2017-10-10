@@ -1,5 +1,5 @@
 
-var headline = 'Os caracteres que compõem seu nome significam "Origem do Sol", razão pela qual o Japão é às vezes identificado como a "Terra do Sol Nascente".';
+var headline = "Hakusan est une municipalité ayant le statut de ville dans la préfecture d'Ishikawa, au Japon. La ville a reçu ce statut en 2004.";
 
 $('.marquee-text').html(headline);
 $('.marquee').fadeIn('slow');
@@ -15,5 +15,5 @@ marquee.each(function() {
             indent = mar.width();
         }
     };
-    mar.data('interval',setInterval(mar.marquee,100/10));
+    mar.data('interval',setInterval(mar.marquee,50/10));
 });

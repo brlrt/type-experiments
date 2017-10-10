@@ -47,6 +47,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'fabrik';
+    src: url( 'assets/fonts/Fabrik-Regular.eot' );
+    src: url( 'assets/fonts/Fabrik-Regular.woff2' ) format( 'woff2' ),
+         url( 'assets/fonts/Fabrik-Regular.woff' ) format( 'woff' );
+    font-weight: normal;
+    font-style: normal;
+}
+
 $fg: #111111;
 $bg: #bbbbbb;
 $sans: 'Lab Mono Web', Helvetica, arial, sans-serif;
@@ -54,12 +63,20 @@ $serif: 'Cormorant', Helvetica, arial, sans-serif;
 $mineral: 'mineral', Helvetica, arial, sans-serif;
 $maxeville: 'maxeville', Helvetica, arial, sans-serif;
 $panamera: 'panamera', Helvetica, arial, sans-serif;
+$fabrik: 'fabrik', Helvetica, arial, sans-serif;
 $borders: 0px;
 
 * {
 	font-weight: normal;
 }
 
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 15px 0;
+}
 
 
 body {
@@ -85,6 +102,9 @@ body {
     font-family: $panamera;
 }
 
+.fabrik {
+    font-family: $fabrik;
+}
 
 
 
@@ -129,9 +149,9 @@ body {
 	p, h1,h2,h3,h4,h5 {
 	      color: $fg;
 	}
+
 	#navigation {
         border-top: $borders solid $fg;
-		background: $bg;
 		a {
 			color: $fg;
 		}
@@ -342,7 +362,7 @@ justify-content: center;
     height: 13px;
     border-radius: 20px;
     margin: 15px;
-    z-index: 100;
+    z-index:90;
 }
 
 #nav-toggle:hover {
@@ -443,4 +463,19 @@ button.active {
 
 .colorLight {
     color: $bg !important;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+.bgDark {
+    background: $fg;
+}
+
+.ontop {
+    background: $fg;
 }

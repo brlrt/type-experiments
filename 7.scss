@@ -7,7 +7,7 @@
 
     @keyframes size {
         0% {font-size: calc(16px + 25vw);}
-        50% {font-size: calc(16px + 35vw);}
+        50% {font-size: calc(16px + 33vw);}
         100% {font-size: calc(16px + 25vw);}
     }
 
@@ -15,7 +15,7 @@
 #kobe {
     display: flex;
     justify-content: center;
-    font-size: calc(16px + 25vw);
+
     text-transform: uppercase;
 
     animation-name: size;
