@@ -3,6 +3,7 @@ $bg: #f1f1f1;
 $overlay: #242D36;
 $overlayText: #f1f1f1;
 $sans: 'Lab Mono Web', Helvetica, arial, sans-serif;
+$futura: 'futura', Helvetica, arial, sans-serif;
 $serif: 'Cormorant', Helvetica, arial, sans-serif;
 $mineral: 'mineral', Helvetica, arial, sans-serif;
 $maxeville: 'maxeville', Helvetica, arial, sans-serif;
@@ -75,6 +76,32 @@ $borders: 0px;
     font-style: normal;
 }
 
+@font-face {
+  font-family: futura;
+  src: url("assets/fonts/futura.eot");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: futura;
+  src: url("assets/fonts/futura.woff");
+  font-weight: normal;
+}
+
+
+@font-face {
+  font-family: futura;
+  src: url("assets/fonts/futura-heavy.eot");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: futura;
+  src: url("assets/fonts/futura-heavy.woff");
+  font-weight: bold;
+}
+
+
 * {
 	font-weight: normal;
 }
@@ -107,6 +134,8 @@ body {
 .fabrik {font-family: $fabrik;}
 
 .mdmaya {font-family: $mdmaya;}
+
+.futura {font-family: 'futura';}
 
 
 

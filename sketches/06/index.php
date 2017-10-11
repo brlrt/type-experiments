@@ -5,6 +5,6 @@
 		</div>
 	</div>
 	<div class="child fullpage flex-center">
-		<h1 id="typo" class="h1 serif colorLight">HAKUSAN</h1>
+		<h1 id="typo" class="h1 serif colorLight">YOKOHAMA</h1>
 	</div>
 </div>
