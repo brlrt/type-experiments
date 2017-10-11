@@ -2,11 +2,9 @@
 <html lang="en">
 	<head>
 
-		<link href="/style.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
 
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-
-		<base href="/">
 
 		<?php
 
