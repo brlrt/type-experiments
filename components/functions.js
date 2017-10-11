@@ -12,12 +12,12 @@ function map_range(value, low1, high1, low2, high2) {
 $(document).ready(function() {
 
     $('#stage').css('display', 'none');
-    $('#stage').fadeIn(500);
+    $('#stage').fadeIn(100);
 
     $('#navigation a').click(function() {
         event.preventDefault();
         newLocation = this.href;
-        $('#stage').fadeOut(500, newpage);
+        $('#stage').fadeOut(100, newpage);
     });
 
     function newpage() {

@@ -21,6 +21,16 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(''));
 });
 
+gulp.task('sassSketches', function () {
+  return gulp.src(['sketches/*/index.scss','*.scss'])
+    .pipe(sass().on('error', sass.logError))
+    // .pipe(rename('style.css'))
+    // .pipe(concat('style.css'))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest(function (file) {
+        return file.base;
+ }));
+});
 
 // gulp.task('packScripts', function() {
 //   return gulp.src('components/*.js')
@@ -47,9 +57,10 @@ gulp.task('packScripts', function (cb) {
 gulp.task('watch', function() {
   gulp.watch('**/*.scss', ['sass']);
   gulp.watch('components/*.js', ['packScripts']);
+  gulp.watch('sketches/*/*.scss', ['sassSketches']);
 });
 
 
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('makeit', ['watch', 'sass', 'packScripts']);
+gulp.task('makeit', ['watch', 'sass', 'sassSketches', 'packScripts']);

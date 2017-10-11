@@ -1,13 +1,13 @@
 <nav id="overlay" class="topleft flex fixed fullpage">
 	<div class="inner h100">
 		<div class="w45 h100 p25">
-			<p>
+			<p class="hide">
 				HAKUSAN – a collection of typographic experiments with Japan-related text-fragments.</p>
-			<p>
+			<p class="hide">
 				Coded by <a target="_blank" href="http://www.timrodenbroeker.de">Tim Rodenbröker</a>.</p>
 		</div>
 		<div class="w45 h100 p25">
-			<p>
+			<p class="hide">
 			Fonts:<br />
 			<a target="_blank" href="https://github.com/CatharsisFonts/Cormorant">Cormorant</a><br />
 			<a target="_blank" href="http://martinwecke.de/lab-mono/">Lab Mono</a><br />

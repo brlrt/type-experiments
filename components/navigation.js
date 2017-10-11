@@ -46,6 +46,8 @@ $( document ).ready(function() {
 
 $('#nav-toggle').click(function(){
     $('#overlay').toggleClass('active');
+        $('#overlay p').toggleClass('hide');
+
     $(this).toggleClass('active');
     $('body').removeClass('invert');
 });

@@ -1,3 +1,16 @@
+$fg: #242D36;
+$bg: #F45145;
+$overlay: #242D36;
+$overlayText: #F45145;
+$sans: 'Lab Mono Web', Helvetica, arial, sans-serif;
+$serif: 'Cormorant', Helvetica, arial, sans-serif;
+$mineral: 'mineral', Helvetica, arial, sans-serif;
+$maxeville: 'maxeville', Helvetica, arial, sans-serif;
+$panamera: 'panamera', Helvetica, arial, sans-serif;
+$fabrik: 'fabrik', Helvetica, arial, sans-serif;
+$mdmaya: 'md maya', Helvetica, arial, sans-serif;
+$borders: 0px;
+
 @font-face {
     font-family: 'Lab Mono Web';
     src: url( 'assets/fonts/labmono-regular-web.eot' );
@@ -37,7 +50,6 @@
     font-style: normal;
 }
 
-
 @font-face {
     font-family: 'panamera';
     src: url( 'assets/fonts/Panamera-Bold.eot' );
@@ -63,20 +75,6 @@
     font-style: normal;
 }
 
-$fg: #242D36;
-$bg: #F45145;
-$overlay: #242D36;
-$overlayText: #F45145;
-$sans: 'Lab Mono Web', Helvetica, arial, sans-serif;
-$serif: 'Cormorant', Helvetica, arial, sans-serif;
-$mineral: 'mineral', Helvetica, arial, sans-serif;
-$maxeville: 'maxeville', Helvetica, arial, sans-serif;
-$panamera: 'panamera', Helvetica, arial, sans-serif;
-$fabrik: 'fabrik', Helvetica, arial, sans-serif;
-$mdmaya: 'md maya', Helvetica, arial, sans-serif;
-$borders: 0px;
-
-
 * {
 	font-weight: normal;
 }
@@ -88,7 +86,9 @@ h1 {
 p {
     margin: 0 0 15px 0;
 }
-
+a {
+    text-decoration: none;
+}
 
 body {
 	margin: 0;
@@ -238,7 +238,6 @@ body.invert {
 		display: block;
 		text-align: center;
         // min-width: 50px;
-		text-decoration: none;
 		font-size: calc(13px + 1vw);
         padding: 0 0.7vw;
 	}
@@ -426,13 +425,26 @@ button.active {
 
     p {
     color: $overlayText;
+    -webkit-transition: opacity 1s ease; /* Firefox */
+	-moz-transition: opacity 1s ease; /* WebKit */
+	-o-transition: opacity 1s ease; /* Opera */
+	transition: opacity 1s ease; /* Standard */
+    opacity: 1;
     }
 
+    p.hide {
+        opacity: 0;
+    }
+
+
+    a {
+        border-bottom: 2px solid $fg;
+    }
 
 	.inner {
 		position: absolute;
 		overflow: hidden;
-		font-size: calc(10px + 1vw);
+		font-size: calc(10px + 2vw);
 		background: $overlay;
 
 		width: 100vw;
@@ -451,7 +463,7 @@ button.active {
 }
 
 .w45 {
-    width: 33%;
+    width: 45%;
 }
 
 .h100 {
