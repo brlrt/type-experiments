@@ -151,6 +151,7 @@ body {
 	}
 
 	#navigation {
+        background: $bg;
         border-top: $borders solid $fg;
 		a {
 			color: $fg;
@@ -183,6 +184,7 @@ body.invert {
     }
     #navigation {
         border-top: $borders solid $bg;
+        background: $fg;
         a {
             color: $bg;
         }

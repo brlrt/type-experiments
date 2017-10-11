@@ -1,5 +1,3 @@
-<?php include 'components/header.php'; ?>
-
 <div id="stage" class="parent fullpage">
 	<div class="word-container fullpage child topleft">
 		<div class="wordWrapper flex-center">
@@ -13,5 +11,3 @@
 	</div>
 
 </div>
-
-<?php include 'components/footer.php'; ?>

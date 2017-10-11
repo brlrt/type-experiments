@@ -8,35 +8,35 @@ $( document ).ready(function() {
         switch(e.which) {
             case 49:
                 // 1
-                window.location.href = '1.php';
+                window.location.href = 'index.php?file=01';
                 break;
             case 50:
                 // 2
-                window.location.href = '2.php';
+                window.location.href = 'index.php?file=02';
                 break;
             case 51:
                 // 3
-                window.location.href = '3.php';
+                window.location.href = 'index.php?file=03';
                 break;
             case 52:
                 // 4
-                window.location.href = '4.php';
+                window.location.href = 'index.php?file=04';
             break;
             case 53:
                 // 5
-                window.location.href = '5.php';
+                window.location.href = 'index.php?file=05';
             break;
             case 54:
                 // 6
-                window.location.href = '6.php';
+                window.location.href = 'index.php?file=06';
             break;
             case 55:
                 // 7
-                window.location.href = '7.php';
+                window.location.href = 'index.php?file=07';
             break;
             case 56:
                 // 8
-                window.location.href = '8.php';
+                window.location.href = 'index.php?file=08';
             break;
             default:
                 // Nothing

@@ -1,6 +1,3 @@
-<?php include 'components/header.php'; ?>
-
-
 <div class="flex-center" id="stage">
 
 	<div class="marquee">
@@ -10,6 +7,3 @@
 	</div>
 
 </div>
-
-
-<?php include 'components/footer.php'; ?>
