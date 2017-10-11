@@ -56,15 +56,26 @@
     font-style: normal;
 }
 
-$fg: #111111;
-$bg: #bbbbbb;
+@font-face {
+    font-family: 'md maya';
+    src: url( 'assets/fonts/MD-Maya-Regular.woff' ) format( 'woff' );
+    font-weight: normal;
+    font-style: normal;
+}
+
+$fg: #242D36;
+$bg: #F45145;
+$overlay: #242D36;
+$overlayText: #F45145;
 $sans: 'Lab Mono Web', Helvetica, arial, sans-serif;
 $serif: 'Cormorant', Helvetica, arial, sans-serif;
 $mineral: 'mineral', Helvetica, arial, sans-serif;
 $maxeville: 'maxeville', Helvetica, arial, sans-serif;
 $panamera: 'panamera', Helvetica, arial, sans-serif;
 $fabrik: 'fabrik', Helvetica, arial, sans-serif;
+$mdmaya: 'md maya', Helvetica, arial, sans-serif;
 $borders: 0px;
+
 
 * {
 	font-weight: normal;
@@ -85,26 +96,17 @@ body {
 	height: 100vh;
 }
 
-.serif {
-    font-family: $serif;
-}
+.serif {font-family: $serif;}
 
-.mineral {
-    font-family: $mineral;
-}
+.mineral {font-family: $mineral;}
 
+.maxeville {font-family: $maxeville;}
 
-.maxeville {
-    font-family: $maxeville;
-}
+.panamera {font-family: $panamera;}
 
-.panamera {
-    font-family: $panamera;
-}
+.fabrik {font-family: $fabrik;}
 
-.fabrik {
-    font-family: $fabrik;
-}
+.mdmaya {font-family: $mdmaya;}
 
 
 
@@ -120,6 +122,9 @@ body {
     transform: rotate(360deg);
   }
 }
+
+
+
 @keyframes rotating {
   from {
     -ms-transform: rotate(0deg);
@@ -157,7 +162,6 @@ body {
 			color: $fg;
 		}
 	}
-
 	.word-container {
 		background: $bg;
         -webkit-transition: background 1s ease; /* Firefox */
@@ -201,6 +205,10 @@ body.invert {
     }
 }
 
+#nav-toggle.active {
+    color: $bg;
+}
+
 
 
 #navigation {
@@ -229,9 +237,10 @@ body.invert {
 	a {
 		display: block;
 		text-align: center;
-        min-width: 50px;
+        // min-width: 50px;
 		text-decoration: none;
-		font-size: calc(20px);
+		font-size: calc(13px + 1vw);
+        padding: 0 0.7vw;
 	}
 	a.active {
 		-webkit-animation: rotating 2s linear infinite;
@@ -414,20 +423,26 @@ button.active {
 	width: 0;
 	overflow: hidden;
 	z-index: 95;
+
+    p {
+    color: $overlayText;
+    }
+
+
 	.inner {
 		position: absolute;
 		overflow: hidden;
 		font-size: calc(10px + 1vw);
-		background: #888888;
-		color: $fg;
+		background: $overlay;
+
 		width: 100vw;
 		display: flex;
 	}
 	a {
-		color: $fg;
+		color: $overlayText;
 	}
 	a:hover {
-		color: $fg;
+		color: $overlayText;
 	}
 }
 
