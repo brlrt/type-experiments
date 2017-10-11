@@ -1,6 +1,6 @@
-<?php include ROOTVZ.'/components/overlay.php'; ?>
+<?php include 'components/overlay.php'; ?>
 
-<?php include ROOTVZ.'/components/navigation.php'; ?>
+<?php include 'components/navigation.php'; ?>
 
 <button id="nav-toggle" class="fixed t1s">
 	?
