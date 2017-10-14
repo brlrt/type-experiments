@@ -180,7 +180,7 @@ body.invert {
 		display: block;
 		text-align: center;
         // min-width: 50px;
-		font-size: calc(13px + 1vw);
+		font-size: 20px;
         padding: 0 0.7vw;
 	}
 	a.active {
@@ -362,16 +362,19 @@ button.active {
 	z-index: 95;
 
     p {
+        position: relative;
     color: $overlayText;
-    -webkit-transition: opacity 1s ease; /* Firefox */
-	-moz-transition: opacity 1s ease; /* WebKit */
-	-o-transition: opacity 1s ease; /* Opera */
-	transition: opacity 1s ease; /* Standard */
+    left: 0px;
+    -webkit-transition: all 1s ease; /* Firefox */
+	-moz-transition: all 1s ease; /* WebKit */
+	-o-transition: all 1s ease; /* Opera */
+	transition: all 1s ease; /* Standard */
     opacity: 1;
     }
 
     p.hide {
         opacity: 0;
+        left: -200px;
     }
 
 
