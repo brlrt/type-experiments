@@ -40,7 +40,7 @@ gulp.task('sassSketches', function () {
 
 gulp.task('packScripts', function (cb) {
   pump([
-        gulp.src('components/*.js'),
+        gulp.src('js/*.js'),
         uglify(),
         concat('main.js'),
         gulp.dest('')
@@ -49,14 +49,13 @@ gulp.task('packScripts', function (cb) {
   );
 });
 
-
 /*
     WATCH
 */
 
 gulp.task('watch', function() {
   gulp.watch('**/*.scss', ['sass']);
-  gulp.watch('components/*.js', ['packScripts']);
+  gulp.watch('js/*.js', ['packScripts']);
   gulp.watch('sketches/*/*.scss', ['sassSketches']);
 });
 
