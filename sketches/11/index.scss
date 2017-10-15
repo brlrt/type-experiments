@@ -1,7 +1,7 @@
-.text-scroller{
+.text-scroller {
     width: auto;
     overflow: auto;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -9,5 +9,17 @@
     h1 {
         white-space: nowrap;
         font-size: calc(16px + 30vw);
-        }
     }
+}
+
+.text-scroller::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.text-scroller::-webkit-scrollbar-track {
+    visibility: hidden;
+}
+
+.text-scroller::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}

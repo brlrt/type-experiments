@@ -39,6 +39,7 @@ h1 {
 
 p {
     margin: 0 0 15px 0;
+	line-height: 130%;
 }
 a {
     text-decoration: none;
@@ -162,7 +163,7 @@ body.invert {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    height: 40px;
+    height: 10vh;
     -webkit-transition: all 1s ease; /* Firefox */
     -moz-transition: all 1s ease; /* WebKit */
     -o-transition: all 1s ease; /* Opera */
@@ -181,9 +182,11 @@ body.invert {
         // min-width: 50px;
 		font-size: 20px;
         padding: 0 0.7vw;
+		opacity: 0.5;
 	}
 	a.active {
     font-weight: bold;
+	opacity: 1;
 	}
 	a:hover {
 
@@ -196,8 +199,9 @@ body.invert {
 
 #stage {
 	width: 100%;
-	height: 100vh;
+	height: 90vh;
 	overflow: hidden;
+
 }
 
 
@@ -442,6 +446,10 @@ button.active {
 }
 .bgDark {
     background: $fg;
+}
+
+.bgLight {
+    background: $bg;
 }
 
 .ontop {
