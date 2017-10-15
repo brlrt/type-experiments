@@ -2,32 +2,31 @@ $fg: #242D36;
 $bg: #f1f1f1;
 $overlay: #242D36;
 $overlayText: #f1f1f1;
-$univers: 'Univers', Helvetica, arial, sans-serif;
 $borders: 0px;
-
-@font-face {
-  font-family: 'Univers';
-  src: url("assets/fonts/univers.eot");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Univers';
-  src: url("assets/fonts/univers.woff");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Univers';
-  src: url("assets/fonts/univers_bold.eot");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Univers';
-  src: url("assets/fonts/univers_bold.woff");
-  font-weight: bold;
-}
+//
+// @font-face {
+//   font-family: 'Univers';
+//   src: url("assets/fonts/univers.eot");
+//   font-weight: normal;
+// }
+//
+// @font-face {
+//   font-family: 'Univers';
+//   src: url("assets/fonts/univers.woff");
+//   font-weight: normal;
+// }
+//
+// @font-face {
+//   font-family: 'Univers';
+//   src: url("assets/fonts/univers_bold.eot");
+//   font-weight: bold;
+// }
+//
+// @font-face {
+//   font-family: 'Univers';
+//   src: url("assets/fonts/univers_bold.woff");
+//   font-weight: bold;
+// }
 
 * {
 	font-weight: normal;
@@ -47,7 +46,7 @@ a {
 
 body {
 	margin: 0;
-	font-family: $univers;
+	font-family: Helvetica, Arial, sans-serif;
 	height: 100vh;
 }
 
