@@ -1,4 +1,3 @@
-
 // Wie viele Links sollen in die navi?
 
 var howManyLinks = 12;
@@ -9,23 +8,31 @@ for (var i = 1; i < howManyLinks; i++){
 }
 
 // A $( document ).ready() block.
-$( document ).ready(function() {
+
 
 // KLICK AUF EIN NAV-ITEM
 
 var clickedLinkInt = 0;
 var stylesheet;
 
+// injectSketch injiziert den Sketch in das DOM
+function injectSketch(a){
+    $('#sketchStyles').attr('href','sketches/' + a + '/index.css');
+    $('#stageWrapper').load('sketches/' + a + '/index.html');
+    $.getScript( 'sketches/' + a + '/index.js');
+};
+
+// Sketch injizieren, wenn ein Link geklickt wird
 $('#navbox a').click(function (){
     clickedLinkInt = $(this).attr('id').replace( /^\D+/g, '');
-    $('#sketchStyles').attr('href','sketches/' + clickedLinkInt + '/index.css');
-    $('#stageWrapper').load('sketches/'+clickedLinkInt+'/index.html');
-
-    $.getScript( 'sketches/'+clickedLinkInt+'/index.js');
-
-    });
-
+    injectSketch(clickedLinkInt);
 });
+
+// Inject the first sketch
+$( document ).ready(function() {
+    injectSketch(1);
+});
+
 
 $('#nav-toggle').click(function(){
     $('#overlay').toggleClass('active');
