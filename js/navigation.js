@@ -2,7 +2,7 @@
 
 var howManyLinks = 12;
 
-for (var i = 1; i < howManyLinks; i++){
+for (var i = 1; i < howManyLinks+1; i++){
     var linkHtml = '<a id="link-' + i + '">' + i + '</a>';
     $('#navbox').append(linkHtml);
 }
@@ -26,6 +26,8 @@ function injectSketch(a){
 $('#navbox a').click(function (){
     clickedLinkInt = $(this).attr('id').replace( /^\D+/g, '');
     injectSketch(clickedLinkInt);
+    $('#navbox a').removeClass('active');
+    $(this).addClass('active');
 });
 
 // Inject the first sketch

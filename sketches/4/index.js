@@ -23,12 +23,9 @@ var arr = string3.split(' ');
 // 	$('#h1').text(currentWord);
 // });
 
+clearInterval(myInterval);
 
-
-
-
-
-setInterval(function(){
+var myInterval = setInterval(function(){
 	currentWord = arr[a];
 	$('#h1').text(currentWord);
 	a++;
