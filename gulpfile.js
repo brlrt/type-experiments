@@ -16,11 +16,21 @@ gulp.task('sass', function () {
   return gulp.src(['scss/*.scss','*.scss'])
     .pipe(sass().on('error', sass.logError))
     // .pipe(rename('style.css'))
-    // .pipe(concat('style.css'))
+    .pipe(concat('style.css'))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest(''));
 });
 
+gulp.task('sassSketches', function () {
+  return gulp.src(['sketches/*/index.scss','*.scss'])
+    .pipe(sass().on('error', sass.logError))
+    // .pipe(rename('style.css'))
+    // .pipe(concat('style.css'))
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest(function (file) {
+        return file.base;
+ }));
+});
 
 // gulp.task('packScripts', function() {
 //   return gulp.src('components/*.js')
@@ -30,7 +40,7 @@ gulp.task('sass', function () {
 
 gulp.task('packScripts', function (cb) {
   pump([
-        gulp.src('components/*.js'),
+        gulp.src('js/*.js'),
         uglify(),
         concat('main.js'),
         gulp.dest('')
@@ -39,17 +49,17 @@ gulp.task('packScripts', function (cb) {
   );
 });
 
-
 /*
     WATCH
 */
 
 gulp.task('watch', function() {
   gulp.watch('**/*.scss', ['sass']);
-  gulp.watch('components/*.js', ['packScripts']);
+  gulp.watch('js/*.js', ['packScripts']);
+  gulp.watch('sketches/*/*.scss', ['sassSketches']);
 });
 
 
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('makeit', ['watch', 'sass', 'packScripts']);
+gulp.task('makeit', ['watch', 'sass', 'sassSketches', 'packScripts']);
