@@ -4,30 +4,6 @@ $overlay: #242D36;
 $overlayText: #f1f1f1;
 $borders: 0px;
 
-@font-face {
-  font-family: 'Univers';
-  src: url("assets/fonts/univers.eot");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Univers';
-  src: url("assets/fonts/univers.woff");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Univers';
-  src: url("assets/fonts/univers_bold.eot");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: 'Univers';
-  src: url("assets/fonts/univers_bold.woff");
-  font-weight: bold;
-}
-
 * {
 	font-weight: normal;
 }
@@ -47,7 +23,7 @@ a {
 
 body {
 	margin: 0;
-	font-family: 'Univers',Helvetica, Arial, sans-serif;
+	font-family: 'Titillium Web',Helvetica, Arial, sans-serif;
 	height: 100vh;
 }
 
@@ -377,7 +353,7 @@ button.active {
 
     p.hide {
         opacity: 0;
-        left: -200px;
+        left: 400px;
     }
 
 
@@ -484,4 +460,10 @@ button.active {
     border-top: 12px solid transparent;
     border-bottom: 12px solid transparent;
     border-left: 12px solid $fg;
+}
+
+#info {
+    padding: 15px;
+    font-size: calc(16px + 6vw);
+    line-height: 120%;
 }
