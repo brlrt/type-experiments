@@ -1,6 +1,6 @@
 // Wie viele Links sollen in die navi?
 
-var howManyLinks = 13;
+var howManyLinks = 14;
 
 for (var i = 1; i < howManyLinks+1; i++){
     var linkHtml = '<a id="link-' + i + '">' + i + '</a>';
