@@ -1,13 +1,13 @@
-@keyframes move1 {
-    0% {width:200px;}
+@keyframes fragment-nsch {
+    0% {width: 18vw;}
     50% {width: 0;}
-    100% {width: 200px;}
+    100% {width: 18vw;}
 }
 
-@keyframes move2 {
-    0% {width:200px;}
+@keyframes fragment-schine {
+    0% {width: 23vw;}
     50% {width: 0;}
-    100% {width: 200px;}
+    100% {width: 23vw;}
 }
 
 
@@ -23,10 +23,19 @@
 .logo-fragment-light {
     opacity: 0.3;
     width: 20px;
-    animation-name: move1;
-    animation-duration: 2s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease; /* Safari 4.0 - 8.0 */
     animation-timing-function: ease;
 
+}
+
+
+#fragment-nsch {
+    animation-name: fragment-nsch;
+}
+
+
+#fragment-schine {
+    animation-name: fragment-schine;
 }
