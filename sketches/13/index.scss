@@ -38,13 +38,13 @@ h1 {
 }
 
 .rect {
-    width: 10vh;
+    width: 10px;
     position: fixed;
     z-index: 1;
     height: 100vh;
     top:0;
     left:0;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 @include keyframes(ltor) {

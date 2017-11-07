@@ -2,12 +2,6 @@ h1 {
     font-size: calc(16px + 20vw);
 }
 
-.blur {
-    -webkit-filter: blur(2px);
-    filter: blur(20px);
-}
-
-
 /* --------------------- MIXINS: ANIMATIONS --------------------- */
 
 @mixin keyframes($animation-name) {

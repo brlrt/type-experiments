@@ -21,9 +21,10 @@ a {
     text-decoration: none;
 }
 
+
 body {
 	margin: 0;
-	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 	height: 100vh;
 }
 
@@ -466,4 +467,64 @@ button.active {
     padding: 15px;
     font-size: calc(16px + 6vw);
     line-height: 120%;
+}
+
+
+.fontExo {
+	font-family: 'Exo', sans-serif;
+}
+
+.fontJosefin {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.fontPlayfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.fontFjallaOne {
+	font-family: 'Fjalla One',sans-serif;
+}
+
+.fontFiraMono {
+	font-family: 'Fira Mono', monospace;
+}
+
+.fontKaushanScript {
+	font-family: 'Kaushan Script', cursive;
+}
+
+.fontRanga {
+	font-family: 'Ranga', cursive;
+}
+
+.fontSpaceMono {
+	font-family: 'Space Mono', monospace;
+}
+
+.fontOranienbaum {
+	font-family: 'Oranienbaum', serif;
+}
+
+.fontAllertaStencil {
+	font-family: 'Allerta Stencil', sans-serif;
+}
+.fontLekton {
+	font-family: 'Lekton', sans-serif;
+}
+
+.fontCodystar {
+	font-family: 'Codystar', cursive;
+}
+
+.fontYatraOne {
+	font-family: 'Yatra One', cursive;
+}
+
+.fontPlaster {
+	font-family: 'Plaster', cursive;
+}
+
+.italic {
+	font-style: italic;
 }
