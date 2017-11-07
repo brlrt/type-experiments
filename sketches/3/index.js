@@ -1,5 +1,5 @@
 
-var headline = "Hakusan est une municipalité ayant le statut de ville dans la préfecture d'Ishikawa, au Japon. La ville a reçu ce statut en 2004.";
+var headline = "Asien, Teil von Eurasien, ist mit rund 44,615 Millionen Quadratkilometern, etwa einem Drittel der gesamten Landmasse, der flächenmäßig größte Erdteil. Mit über vier Milliarden Menschen, mehr als der Hälfte der Weltbevölkerung, ist dieser Erdteil auch der einwohnerstärkste. Es gibt 47 international anerkannte Staaten Asiens.";
 
 $('.marquee-text').html(headline);
 $('.marquee').fadeIn('slow');

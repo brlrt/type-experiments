@@ -6,7 +6,7 @@
 
 // Array
 
-var str = "Hakusan é uma cidade japonesa localizada na província de Ishikawa. Em 2007 a cidade tinha uma população estimada em 110 313 habitantes e uma densidade populacional de 146,1 h/km². Tem uma área total de 755,17 km². Recebeu o estatuto de cidade a 1 de Fevereiro de 2005.";
+var str = "Bis zur Annexion Koreas durch Japan 1910 hatte es Staaten gegeben, die sich über die gesamte Halbinsel erstreckten. Die Teilung des Landes begann nach dem Zweiten Weltkrieg mit der Aufteilung Koreas in eine US-amerikanische und eine sowjetische Besatzungszone, aus denen 1948 infolge der Teilung Koreas zwei unabhängige Staaten hervorgingen. Der Koreakrieg (1950 bis 1953) besiegelte die Spaltung der koreanischen Halbinsel (siehe dazu Korea-Konflikt).";
 
 var string2 = str.replace(/&shy;/g,'');
 

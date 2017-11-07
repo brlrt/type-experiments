@@ -1,6 +1,7 @@
 
 h1 {
 	font-size: calc(16px + 20vw);
+	font-weight: bold;
 }
 .word-container {
 	overflow: hidden !important;
@@ -15,16 +16,14 @@ h1 {
 
     @keyframes move1 {
         0% {left:0;}
-        50% {left:-10px;}
+        50% {left:-30px;}
         100% {left:0;}
     }
 	@keyframes move2 {
 		0% {left:0;}
-		50% {left:10px;}
+		50% {left:30px;}
 		100% {left:0;}
 	}
-
-
 
 #word1 {
 	position: relative;
